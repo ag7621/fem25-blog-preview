@@ -1,4 +1,4 @@
-::root {
+:root {
   /* colors */
   --clr-yellow: hsl(47, 88%, 63%);
   --clr-white: hsl(0, 0%, 100%);
@@ -95,4 +95,64 @@ h6 {
 
 body {
   background-color: var(--clr-body-bg);
+  color: var(--clr-text-primary);
+  font-family: 'Figtree', sans-serif;
+  font-size: var(--fs-400);
+  font-weight: var(--fw-medium);
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+.card {
+  background-color: var(--clr-card-bg);
+  border: 1px solid var(--clr-gray-950);
+  border-radius: 1rem;
+  width: 380px;
+  max-height: 522px;
+  padding: 1.5rem;
+}
+
+.card__banner-image {
+  border-radius: 12px;
+}
+
+.card__tag {
+  background-color: var(--clr-yellow);
+  padding: 8px;
+  width: 80px;
+  font-weight: var(--fw-ex-bold);
+}
+
+.card__date {
+  font-weight: var(--fw-medium);
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: var(--fw-ex-bold);
+}
+
+.card__text {
+  color: var(--clr-text-secondary);
+}
+
+.card__author {
+  display: flex;
+  align-items: center;
+}
+
+.card__author-image {
+  height: 32px;
+}
+
+.card__author-name {
+  font-weight: var(--fw-ex-bold);
 }
