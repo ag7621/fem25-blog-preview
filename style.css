@@ -118,6 +118,7 @@ h3 {
   width: 380px;
   max-height: 522px;
   padding: 1.5rem;
+  box-shadow: 8px 8px var(--clr-gray-950);
 }
 
 .card__banner-image {
@@ -126,27 +127,39 @@ h3 {
 
 .card__tag {
   background-color: var(--clr-yellow);
-  padding: 8px;
+  border-radius: 5px;
+  padding: 4px;
   width: 80px;
   font-weight: var(--fw-ex-bold);
+  text-align: center;
+  margin-top: 24px;
 }
 
 .card__date {
   font-weight: var(--fw-medium);
+  margin-top: 11px;
 }
 
 .card__title {
   font-size: 24px;
   font-weight: var(--fw-ex-bold);
+  margin-top: 12px;
+}
+
+.card__title:hover {
+  color: var(--clr-text-accent);
+  cursor: pointer;
 }
 
 .card__text {
   color: var(--clr-text-secondary);
+  margin-top: 12px;
 }
 
 .card__author {
   display: flex;
   align-items: center;
+  margin-top: 24px;
 }
 
 .card__author-image {
@@ -154,5 +167,10 @@ h3 {
 }
 
 .card__author-name {
+  margin-left: 12px;
   font-weight: var(--fw-ex-bold);
+}
+
+.attribution {
+  margin-top: 8px;
 }
